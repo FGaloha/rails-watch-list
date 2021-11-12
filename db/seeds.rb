@@ -12,12 +12,12 @@ Movie.create(title: "The Shawshank Redemption", overview: "Framed in the 1940s f
 Movie.create(title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic.", poster_url: "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", rating: 7.9)
 Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0)
 
+List.create(name: 'Best of')
+List.create(name: 'Classics')
+List.create(name: 'Drama')
+
 Bookmark.create(comment: "very good list", movie_id: 1, list_id: 1)
 Bookmark.create(comment: "very good movie", movie_id: 2, list_id: 1)
 Bookmark.create(comment: "very good time", movie_id: 4, list_id: 1)
 Bookmark.create(comment: "best movie of all times", movie_id: 3, list_id: 2)
 Bookmark.create(comment: "great moment", movie_id: 1, list_id: 2)
-
-List.create(name: 'Best of')
-List.create(name: 'Classics')
-List.create(name: 'Drama')
