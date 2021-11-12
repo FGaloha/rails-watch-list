@@ -1,0 +1,10 @@
+<h1>My lists</h1>
+
+<div class="cards">
+  <% @lists.each do |list| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i0.wp.com/disneymovieslist.com/wp-content/uploads/2017/12/bIuOWTtyFPjsFDevqvF3QrD1aun.jpg?fit=800%2C1200&ssl=1)">
+      <h2><%= list.name %></h2>
+      <h4><%= link_to "Details", list_path(list), id: "card-btn-blue", class: "btn btn-primary" %></h4>
+    </div>
+  <% end %>
+</div>
