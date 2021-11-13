@@ -2,7 +2,7 @@
     <% if @list.photo.attached? %>
       <%= cl_image_tag @list.photo.key, crop: :fill %>
     <% else %>
-      <%= image_tag 'list-default-photo.jpeg',width: 400, height: 300 %>
+      <%= image_tag 'list-default-photo.jpg',width: 400, height: 300 %>
     <% end  %>
     <div class="card-trip-infos">
       <h2><%= @list.name %></h2>
@@ -11,7 +11,7 @@
 
 <div class="card-product">
     <% @list.movies.each do |movie| %>
-      <%= image_tag 'list-default-movie.jpeg' %>
+      <%= image_tag 'list-default-movie.jpg' %>
       <div class="card-product-infos">
         <h2><%= movie.title %></h2>
         <p>
